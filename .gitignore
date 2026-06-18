@@ -22,3 +22,6 @@ output/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Claude Code
+.claude/
