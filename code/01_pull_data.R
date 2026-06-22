@@ -74,8 +74,9 @@ if (max(check_by_year$max_abs_diff, na.rm = TRUE) > 0) {
 }
 
 # ----- 4. Save raw -------------------------------------------------
-# Saved as .rds (preserves R types) for the cleaning step (02_build_panel.R).
-# data/raw/ is gitignored, so this stays off GitHub.
 dir.create("data/raw", showWarnings = FALSE, recursive = TRUE)
 saveRDS(acs_raw, "data/raw/acs_b15003_2012_2024_raw.rds")
 message("Saved: data/raw/acs_b15003_2012_2024_raw.rds  (", nrow(acs_raw), " rows)")
+
+
+
