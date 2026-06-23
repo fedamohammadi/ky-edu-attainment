@@ -1,10 +1,4 @@
-# Data (pulled by code, never committed)
-data/raw/
-data/cleaned/
-*.dta
-*.csv
-*.txt
-*.dct
+
 
 # Stata junk
 *.log
