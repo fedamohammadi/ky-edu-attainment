@@ -1,8 +1,8 @@
 *===============================================================
 * 03_state_trends.do
 * Purpose: state-level trend figure (mean BA+, mean some-college,
-*          and BA+ dispersion P90-P10) by year.
-* Input  : data/cleaned/ky_ed_panel_2012_2024.dta
+*          and BA+ dispersion P90-P10) by year, on harmonized 2020 tracts.
+* Input  : data/cleaned/ky_ed_panel_harmonized_2012_2024.dta
 *===============================================================
 
 clear all
@@ -16,8 +16,8 @@ capture mkdir "output"
 capture mkdir "output/figures"
 capture mkdir "output/tables"
 
-* --- load the clean panel ---
-use "data/cleaned/ky_ed_panel_2012_2024.dta", clear
+* --- load the HARMONIZED panel (all years on 2020 tracts) ---
+use "data/cleaned/ky_ed_panel_harmonized_2012_2024.dta", clear
 
 * --- collapse the tract panel to one row per year ---
 collapse (mean) mean_baplus   = pct_baplus      ///
@@ -32,7 +32,7 @@ label variable disp_baplus "BA+ dispersion (P90-P10, pp)"
 * --- print the numbers and save them ---
 list year mean_baplus mean_somecoll disp_baplus, clean
 export delimited year mean_baplus mean_somecoll disp_baplus ///
-       using "output/tables/state_trends.csv", replace
+       using "output/tables/state_trends_harmonized.csv", replace
 
 * --- build the figure ---
 twoway ///
@@ -44,13 +44,12 @@ twoway ///
    ytitle("BA+ dispersion: P90-P10 (pp)", axis(2)) ///
    xtitle("Year") ///
    xlabel(2012(2)2024) ///
-   xline(2019.5, lcolor(gs12) lpattern(shortdash)) ///
    legend(order(1 "BA+ mean" 2 "Some coll./assoc. mean" 3 "BA+ P90-P10 (right axis)") ///
           rows(1) position(6) size(small)) ///
    title("Kentucky Educational Attainment Over Time, 2012-2024") ///
-   note("Unweighted mean across tracts. Vertical line marks the 2010->2020 tract boundary change.") ///
+   note("Unweighted mean across tracts, all years harmonized to 2020 tract boundaries.") ///
    graphregion(color(white)) plotregion(color(white))
 
 * --- save the figure ---
-graph export "output/figures/fig1_state_trends.png", replace width(2400)
+graph export "output/figures/fig1_state_trends_harmonized.png", replace width(2400)
 display "Done."
