@@ -1,0 +1,28 @@
+dictionary {
+_first(2)
+str50 Geo__geoid_ "FIPS"
+str50 Geo_FILEID "Always equal to ACS Summary File identification"
+str50 Geo_STUSAB "State Postal Abbreviation"
+long Geo_SUMLEV "Summary Level"
+long Geo_GEOCOMP "Geographic Component"
+long Geo_STATE "State (FIPS Code)"
+long Geo_COUNTY "County of current residence"
+long Geo_TRACT "Census Tract"
+str50 Geo_CNECTA "New England City and Town Combined Statistical Area"
+str50 Geo_NECTADIV "New England City and Town Area Division"
+str50 Geo_GEO_ID "Geographic Identifier"
+str50 Geo_NAME "Area Name"
+double Geo_AREALAND "Area (Land)"
+double Geo_AREAWATER "Area (Water)"
+long Geo_PLACESE "Place (State FIPS + Place FIPS)"
+str50 Geo_qname "Qualified Area Name"
+long SE_A12002_001 "Population 25 Years and Over:"
+long SE_A12002_002 "Population 25 Years and Over: Less than High School"
+long SE_A12002_003 "Population 25 Years and Over: High School Graduate (Includes Equivalency)"
+long SE_A12002_004 "Population 25 Years and Over: Some College"
+long SE_A12002_005 "Population 25 Years and Over: Bachelor's Degree"
+long SE_A12002_006 "Population 25 Years and Over: Master's Degree"
+long SE_A12002_007 "Population 25 Years and Over: Professional School Degree"
+long SE_A12002_008 "Population 25 Years and Over: Doctorate Degree"
+}
+

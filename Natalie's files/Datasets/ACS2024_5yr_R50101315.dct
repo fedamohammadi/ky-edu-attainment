@@ -1,0 +1,18 @@
+dictionary {
+_first(2)
+str50 Geo__geoid_ "FIPS"
+str50 Geo__geo_level_ "GeoLevel"
+str50 Geo_NAME "NAME"
+str50 Geo_qname "Qualified Area Name"
+double Geo_AREALAND "Area (Land)"
+double Geo_AREAWATER "Area (Water)"
+long SE_A12002_001 "Population 25 Years and Over:"
+long SE_A12002_002 "Population 25 Years and Over: Less than High School"
+long SE_A12002_003 "Population 25 Years and Over: High School Graduate (Includes Equivalency)"
+long SE_A12002_004 "Population 25 Years and Over: Some College"
+long SE_A12002_005 "Population 25 Years and Over: Bachelor's Degree"
+long SE_A12002_006 "Population 25 Years and Over: Master's Degree"
+long SE_A12002_007 "Population 25 Years and Over: Professional School Degree"
+long SE_A12002_008 "Population 25 Years and Over: Doctorate Degree"
+}
+
