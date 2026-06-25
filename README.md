@@ -3,7 +3,7 @@
 ## 📁 Project Structure
 
 ```text
-ky-ed-attainment/
+ky-edu-attainment/
 │
 ├── code/          # Stata and R scripts for data construction, harmonization, analysis, maps, and figures
 │
