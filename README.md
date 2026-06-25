@@ -1,4 +1,4 @@
-## ky-ed-attainment
+## Kentucky Educational Attainment
 
 ## 📁 Project Structure
 
