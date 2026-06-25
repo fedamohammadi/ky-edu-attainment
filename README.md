@@ -20,7 +20,7 @@ ky-edu-attainment/
 │   └── tables/    # Summary statistics, dispersion results, and county-level outputs
 │
 ├── .gitignore     # Files and folders excluded from version control
-├── ky-ed-attainment.Rproj
+├── ky-edu-attainment.Rproj
 └── README.md
 ```
 
