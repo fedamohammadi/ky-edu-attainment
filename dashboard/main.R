@@ -4,14 +4,17 @@
 #   Or from the console:  shiny::runApp("dashboard/main.R")
 # It sources the shared setup and every page, then assembles the app. You do not
 # run the other files yourself.
+# Paths below are rooted with here() so this still works no matter what the
+# current working directory is when the file gets sourced/run.
 # --------------------------------------------------------------------------------
 
-source("setup.R")
-source("page_about.R")
-source("page_methodology.R")
-source("page_visualizations.R")
-source("page_results.R")
-source("page_references.R")
+library(here)
+source(here("dashboard", "setup.R"))
+source(here("dashboard", "page_about.R"))
+source(here("dashboard", "page_methodology.R"))
+source(here("dashboard", "page_visualizations.R"))
+source(here("dashboard", "page_results.R"))
+source(here("dashboard", "page_references.R"))
 
 ui <- fluidPage(
   tags$head(tags$style(HTML(APP_CSS))),
