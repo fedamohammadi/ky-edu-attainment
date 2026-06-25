@@ -92,6 +92,8 @@ APP_CSS <- "
   .coming-soon { color:#7a8699; font-size:20px; text-align:center; padding:90px 0; }
   .about-body { font-size:15px; line-height:1.6; color:#1d385e; }
   .about-body h3 { color:#1d385e; margin-top:22px; font-size:17px; }
+  .app-footer { position:fixed; bottom:14px; left:15px; font-size:12px;
+                color:#1d385e; opacity:0.7; }
 "
 
 

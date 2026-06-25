@@ -24,7 +24,8 @@ ui <- fluidPage(
     tabPanel("Visualizations", visualizationsUI("viz")),
     tabPanel("Results",        resultsUI()),
     tabPanel("References",     referencesUI())
-  )
+  ),
+  div(class = "app-footer", "Author: Feda Mohammadi")
 )
 
 server <- function(input, output, session) {
