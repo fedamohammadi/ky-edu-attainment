@@ -1,5 +1,4 @@
 *===============================================================================
-* 14_ipeds_ky_crosswalk.do
 *
 * Build UNITID -> county crosswalk for Kentucky institutions.
 * Uses hd2024 as primary (most current), then appends hd2000 to catch
@@ -44,15 +43,14 @@ tempfile hd10
 save `hd10'
 
 count
-di "KY institutions in hd2000: " r(N)
+di "KY institutions in hd2010: " r(N)
 
 *-------------------------------------------------------------------------------
 * PART C: Combine, keeping hd2024 record when institution appears in both
 *-------------------------------------------------------------------------------
 use `hd24', clear
-append using `hd00'
+append using `hd10'
 
-* Sort so hd2024 records come first for each UNITID; drop duplicates keeping first.
 gsort unitid -source_year
 duplicates drop unitid, force
 
