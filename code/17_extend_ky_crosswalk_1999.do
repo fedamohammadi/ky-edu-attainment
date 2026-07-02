@@ -4,7 +4,7 @@
 * Extends the KY UNITID -> county crosswalk backward using ic99_hd.
 * Catches institutions that existed in 1999 but closed before 2010.
 *
-* Input:  data/raw/ipeds/ic99_hd_data_stata.csv  (verify filename first!)
+* Input:  data/raw/ipeds/ic99_hd_data_stata.csv  
 * Input:  data/cleaned/ipeds_ky_crosswalk.dta    (from script 14)
 *
 * Output: data/cleaned/ipeds_ky_crosswalk.dta    (updated in place)
