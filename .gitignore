@@ -16,3 +16,21 @@ Desktop.ini
 
 # VS Code
 .vscode/
+
+
+# National extension data (too large for GitHub)
+data/cleaned/us_ed_panel_*.dta
+data/cleaned/us_ed_panel_*.rds
+data/cleaned/us_ed_panel_harmonized_*.dta
+data/cleaned/us_ed_panel_harmonized_*.rds
+data/raw/acs_b15003_2012_2024_us_raw.rds
+data/raw/nhgis_national/
+
+
+data/raw/nhgis_national/
+data/cleaned/us_*
+data/raw/acs_*_us_*
+# Naional extension data (too large for github)
+data/raw/nhgis_national/
+data/cleaned/us_*
+data/raw/acs_*us_*
