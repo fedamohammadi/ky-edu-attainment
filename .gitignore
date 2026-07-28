@@ -1,10 +1,8 @@
-
-
 # Stata junk
 *.log
 *.smcl
 
-# R junk (in case you use it)
+# R junk
 .Rhistory
 .RData
 .Rproj.user/
@@ -17,15 +15,15 @@ Desktop.ini
 # VS Code
 .vscode/
 
-
-# National extension data (too large for GitHub)
+# National raw data (too large for GitHub)
+data/raw/nhgis_national/
 data/raw/acs_b15003_2012_2024_us_raw.rds
-data/raw/nhgis_national/
 
+# National tract data (too large)
+data/cleaned/us_ed_panel_2012_2024.*
+data/cleaned/us_ed_panel_harmonized_2012_2024.*
+data/cleaned/us_ed_panel_full_1990_2024.*
 
-data/raw/nhgis_national/
-data/raw/acs_*_us_*
-# Naional extension data (too large for github)
-data/raw/nhgis_national/
-data/cleaned/us_*
-data/raw/acs_*us_*
+# Explicit allow: keep county-level long panel in git
+!data/cleaned/us_ed_county_panel_long_1940_2024.*
+!data/cleaned/us_ed_county_panel_1990_2024.*
