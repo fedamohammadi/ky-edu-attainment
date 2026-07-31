@@ -27,3 +27,6 @@ data/cleaned/us_ed_panel_full_1990_2024.*
 # Explicit allow: keep county-level long panel in git
 !data/cleaned/us_ed_county_panel_long_1940_2024.*
 !data/cleaned/us_ed_county_panel_1990_2024.*
+
+# Eckert CBP raw data (1.2 GB, too large)
+data/raw/eckert_cbp/
